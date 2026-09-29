@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1790695678|4410381';
+const CACHE_VERSION = '1790699000|3246463';
 /** @type {string} */
 const CACHE_PREFIX = 'ARCFALL — 弧境-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
