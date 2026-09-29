@@ -14,4 +14,4 @@ Web 导出文件位于 `build/web/`，完整分发包为 `build/ARCFALL-Web.zip`
 
 在项目根目录运行 `powershell -ExecutionPolicy Bypass -File tools/export_mobile_web.ps1`。本机需要与项目版本一致的 Godot 4.7.2 和 Web 导出模板。
 
-当前 Web 导出约 120 MB（PCK 约 76 MiB，WebAssembly 约 38 MiB）；分发 ZIP 通常会略小。手机首次加载会下载这些文件，远端主机若支持 gzip 或 Brotli，可显著减少传输时间。该网页包适合 HTTPS 静态托管；直接把 ZIP 发到手机并不会变成可离线安装的网页。
+当前 Web 导出使用 ETC2 移动端纹理压缩，PCK 约 56 MiB，WebAssembly 约 38 MiB；分发 ZIP 约 50 MiB。静态托管启用 gzip 后首次传输量还会更小。该网页包适合 HTTPS 静态托管；直接把 ZIP 发到手机并不会变成可离线安装的网页。
